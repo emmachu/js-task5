@@ -1,58 +1,97 @@
 body{
 	background: url(../img/background.jpg) no-repeat center center;
+	background-size: 100%;
 }
-.login {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 1rem;
-		background-color: rgba(255, 255, 255, 1);
-	}
+.login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 2rem 3rem;
+	background-color: rgba(255, 255, 255, 0.5);
+}
 .login:before {
-		content: '';
-		position: absolute;
-		top: .5rem;
-		bottom: .5rem;
-		left: .5rem;
-		right: .5rem;
-		border: .2rem dashed #ccc;
-	}
-
-h1{
-	position: relative;
-	top: .1rem;
-	bottom: 1rem;
-	color: #666;
-	letter-spacing: .5rem;
-	text-align: center;
-	font: normal 2rem/1 Verdana, Helvetica;
-	background-color: blue;
+	content: '';
+	position: absolute;
+	top: .5rem;
+	bottom: .5rem;
+	left: .5rem;
+	right: .5rem;
+	border: .2rem dashed #ccc;
 }
-.user{
-	padding:.5rem 0 .5rem 2rem;
-	size:3rem;
+.title{
+	height: 2rem;
+	line-height: 2rem;
+	margin-bottom: 1rem;
 	font-size: 2rem;
+	text-align: center;
+	color: orange;
+}
+.box{
+	height: 2.5rem;
+	line-height: 2.5rem;
 	background: url(../img/username.png) no-repeat left center;
 	background-size: 1.5rem 1.5rem;
+	background-color: rgba(255, 255, 255, 0.6);
+	// border:1px solid #000;
 }
-.password{
-	padding:.5rem 0 .5rem 2rem;
-	size:3rem;
-	font-size: 2rem;
+
+.box1{
+	margin-top: .5rem;
 	background: url(../img/password.png) no-repeat left center;
 	background-size: 1.5rem 1.5rem;
-	margin: .5rem 0;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.user,.password{
+	position: relative;
+	left: 1.8rem;
+	width: 80%;
+	padding-left: .5rem;
+	color: orange;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	border-left: .1rem solid #000;
+	border-color: #aaa;
+	outline: none;
+	
+}
+input::-webkit-input-placeholder{
+	font-size: 1.5rem;
+    color: orange;
+    background-color: rgba(255, 255, 255, 0);
+}
+input::-moz-placeholder{
+	font-size: 1.5rem;
+    color: orange;
+}
+input:-moz-placeholder{
+	font-size: 1.5rem;
+    color: orange;
+}
+input:-ms-input-placeholder{
+	font-size: 1.5rem;
+    color: orange;
+}
+.tips{
+	height: 1.5rem;
+	margin-top: .5rem;
+	font-size: 1.5rem;
+	color: red;
+	text-align: center;
+	// border:1px solid #000;
 }
 .btn{
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	padding: .5rem 1.5rem;
+	margin-top: 1rem;
+	padding: .5rem 0;
 	width: 80%;
-	font-size: 2rem;
-	background: orange;
-	border-radius: .5rem;
+	color: #fff;
 	border: none;
 	outline: none;
+	background-color: orange;
+	border-radius: .5rem;
+	border:1px solid #000;
 }
