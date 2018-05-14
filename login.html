@@ -5,19 +5,21 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>登录</title>
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/myreset.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
-	<form action="" class="login">
-		<fieldset class="input">
-			<h1>后台登录</h1>
-			<p><input type="text" name="username" placeholder="username" class="user"></p>
-			<p><input type="password" name="password" placeholder="password" class="password"></p>
-			<button class="btn">登陆</button>
-			<input type="text">
-		</fieldset>
-	</form>
+	<div class="login">
+		<div class="title">后台登录</div>
+		<div>
+			<div class="box"><input type="text" name="username" placeholder="username" class="user"></div>
+			<div class="box box1"><input type="password" name="password" placeholder="password" class="password"></div>
+			<p class="tips"></p>
+		</div>
+		<button class="btn">登陆</button>
+	</div>
 </form>
 </body>
 </html>
