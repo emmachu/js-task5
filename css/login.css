@@ -24,6 +24,7 @@ body{
 	line-height: 2rem;
 	margin-bottom: 1rem;
 	font-size: 2rem;
+	font-weight: bold;
 	text-align: center;
 	color: orange;
 }
@@ -32,7 +33,7 @@ body{
 	line-height: 2.5rem;
 	background: url(../img/username.png) no-repeat left center;
 	background-size: 1.5rem 1.5rem;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgb(255, 255, 255);
 	// border:1px solid #000;
 }
 
@@ -40,7 +41,7 @@ body{
 	margin-top: .5rem;
 	background: url(../img/password.png) no-repeat left center;
 	background-size: 1.5rem 1.5rem;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgb(255, 255, 255);
 }
 
 .user,.password{
@@ -48,7 +49,7 @@ body{
 	left: 1.8rem;
 	width: 80%;
 	padding-left: .5rem;
-	color: orange;
+	font-weight: bold;
 	background-color: rgba(255, 255, 255, 0);
 	border: none;
 	border-left: .1rem solid #000;
@@ -58,30 +59,33 @@ body{
 }
 input::-webkit-input-placeholder{
 	font-size: 1.5rem;
-    color: orange;
     background-color: rgba(255, 255, 255, 0);
 }
 input::-moz-placeholder{
 	font-size: 1.5rem;
-    color: orange;
+	background-color: rgba(255, 255, 255, 0);
 }
 input:-moz-placeholder{
 	font-size: 1.5rem;
-    color: orange;
+	background-color: rgba(255, 255, 255, 0);
 }
 input:-ms-input-placeholder{
 	font-size: 1.5rem;
-    color: orange;
+	background-color: rgba(255, 255, 255, 0);
 }
+input:-webkit-autofill {
+	box-shadow: 0 0 0px 1000px white inset !important;
+}
+
 .tips{
 	height: 1.5rem;
 	margin-top: .5rem;
 	font-size: 1.5rem;
+	font-weight: bold;
 	color: red;
 	text-align: center;
-	// border:1px solid #000;
 }
-.btn{
+.fbtn{
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
@@ -89,9 +93,11 @@ input:-ms-input-placeholder{
 	padding: .5rem 0;
 	width: 80%;
 	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: .5rem;
 	border: none;
 	outline: none;
 	background-color: orange;
 	border-radius: .5rem;
-	border:1px solid #000;
 }
